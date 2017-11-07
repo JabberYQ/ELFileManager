@@ -66,7 +66,7 @@ static id instance = nil;
 - (BOOL)createFileToPath:(NSString *)path fileName:(NSString *)name
 {
     path = [NSString stringWithFormat:@"%@/%@", path, name];
-    return [self.fileManager createFileAtPath:path contents:[@"ss" dataUsingEncoding:NSUTF8StringEncoding] attributes:nil];
+    return [self.fileManager createFileAtPath:path contents:nil attributes:nil];
 }
 
 - (BOOL)addFile:(id)file toPath:(NSString *)path fileName:(NSString *)name
