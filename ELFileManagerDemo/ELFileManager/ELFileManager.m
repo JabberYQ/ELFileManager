@@ -40,6 +40,12 @@ static id instance = nil;
     return self;
 }
 
+- (ELFileModel *)getFileWithPath:(NSString *)path
+{
+    ELFileModel *file = [[ELFileModel alloc] initWithFilePath:path];
+    return file;
+}
+
 - (NSArray *)getAllFileWithPath:(NSString *)path
 {
     NSMutableArray *files = [NSMutableArray array];

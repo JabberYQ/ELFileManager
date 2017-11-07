@@ -77,7 +77,6 @@
         self.homePath = self.fileModel.filePath;
     }
     
-    
     // init视图
     [self initViews];
 

@@ -20,6 +20,14 @@
 + (instancetype)shareManager;
 
 /**
+ 获得一个文件
+ 
+ @param path 文件路径
+ @return ELFileModel 对象
+ */
+- (ELFileModel *)getFileWithPath:(NSString *)path;
+
+/**
  获取到当前路径下的所有文件（包括文件夹）
 
  @param path 文件夹路径
