@@ -57,16 +57,32 @@ static id instance = nil;
     return files;
 }
 
+- (BOOL)fileExistsAtPath:(NSString *)path
+{
+    return [[NSFileManager defaultManager] fileExistsAtPath:path];
+}
+
 - (BOOL)createFolderToPath:(NSString *)path folderName:(NSString *)name
 {
     path = [NSString stringWithFormat:@"%@/%@", path, name];
-    return [self.fileManager createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
+    return [self createFolderToFullPath:path];
+}
+
+- (BOOL)createFolderToFullPath:(NSString *)fullPath
+{
+    NSError *error;
+    return  [self.fileManager createDirectoryAtPath:fullPath withIntermediateDirectories:YES attributes:nil error:&error];
 }
 
 - (BOOL)createFileToPath:(NSString *)path fileName:(NSString *)name
 {
     path = [NSString stringWithFormat:@"%@/%@", path, name];
-    return [self.fileManager createFileAtPath:path contents:nil attributes:nil];
+    return [self createFileToFullPath:path];
+}
+
+- (BOOL)createFileToFullPath:(NSString *)fullPath
+{
+    return [self.fileManager createFileAtPath:fullPath contents:nil attributes:nil];
 }
 
 - (BOOL)addFile:(id)file toPath:(NSString *)path fileName:(NSString *)name
@@ -156,3 +172,5 @@ static id instance = nil;
 }
 
 @end
+
+

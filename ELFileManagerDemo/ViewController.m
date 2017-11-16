@@ -67,19 +67,22 @@
 {
     [super viewDidLoad];
     
+    self.fileManager = [ELFileManager shareManager];
+    
     if (self.fileModel == nil) { // 总目录
         self.homePath = [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"ELFileCache"];
         // 创建一个目录
-        [self createHomeFilePath:self.homePath];
+        [self.fileManager createFolderToFullPath:self.homePath];
         self.title = @"总目录";
     } else {
         self.title = self.fileModel.name;
         self.homePath = self.fileModel.filePath;
     }
     
+    
     // init视图
     [self initViews];
-
+    
     // 获得路径下的所以文件
     [self getAllFile];
 }
@@ -275,7 +278,6 @@
 
 - (void)getAllFile
 {
-    self.fileManager = [ELFileManager shareManager];
     self.files = [NSMutableArray arrayWithArray:[self.fileManager getAllFileWithPath:self.homePath]];
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.tv reloadData];
@@ -337,21 +339,9 @@
     [actionSheetController addAction:downloadFileAction];
     [actionSheetController addAction:searchAction];
     [actionSheetController addAction:cancelAction];
-
+    
     // 显示
     [self presentViewController:actionSheetController animated:YES completion:nil];
-}
-
-// 创建一个目录
-- (void)createHomeFilePath:(NSString *)homePath
-{
-    NSLog(@"%@", homePath);
-    if(![[NSFileManager defaultManager] fileExistsAtPath:homePath]){ // 如果不存在这个路径 就创建
-        [[NSFileManager defaultManager] createDirectoryAtPath:homePath
-                                  withIntermediateDirectories:YES
-                                                   attributes:nil
-                                                        error:nil];
-    }
 }
 
 - (void)cellLongPress:(UILongPressGestureRecognizer *)longRecognizer
@@ -451,3 +441,4 @@
     return _files;
 }
 @end
+
