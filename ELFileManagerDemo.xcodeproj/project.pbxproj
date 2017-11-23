@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DE6EC0D71F905B68001FFBA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6EC0D61F905B68001FFBA3 /* AppDelegate.m */; };
-		DE6EC0DA1F905B68001FFBA3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6EC0D91F905B68001FFBA3 /* ViewController.m */; };
 		DE6EC0DF1F905B68001FFBA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6EC0DE1F905B68001FFBA3 /* Assets.xcassets */; };
 		DE6EC0E21F905B68001FFBA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6EC0E01F905B68001FFBA3 /* LaunchScreen.storyboard */; };
 		DE6EC0E51F905B68001FFBA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6EC0E41F905B68001FFBA3 /* main.m */; };
@@ -16,6 +15,11 @@
 		DE6EC0FA1F905B68001FFBA3 /* ELFileManagerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6EC0F91F905B68001FFBA3 /* ELFileManagerDemoUITests.m */; };
 		DED1CCA31F905E5300AD8BB5 /* ELFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DED1CC9F1F905E4600AD8BB5 /* ELFileManager.m */; };
 		DED1CCA41F905E5900AD8BB5 /* ELFileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DED1CCA11F905E4600AD8BB5 /* ELFileModel.m */; };
+		F334C4FC1FC6B45300FFEFD3 /* ELMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F334C4F71FC6B45200FFEFD3 /* ELMoreViewController.m */; };
+		F334C4FD1FC6B45300FFEFD3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F334C4F81FC6B45200FFEFD3 /* MainViewController.m */; };
+		F334C4FE1FC6B45300FFEFD3 /* ELFileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F334C4F91FC6B45300FFEFD3 /* ELFileDetailViewController.m */; };
+		F334C4FF1FC6B45300FFEFD3 /* ELFileBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F334C4FA1FC6B45300FFEFD3 /* ELFileBrowseViewController.m */; };
+		F334C5001FC6B45300FFEFD3 /* ELUploadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F334C4FB1FC6B45300FFEFD3 /* ELUploadFileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +43,6 @@
 		DE6EC0D21F905B68001FFBA3 /* ELFileManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELFileManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6EC0D51F905B68001FFBA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE6EC0D61F905B68001FFBA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DE6EC0D81F905B68001FFBA3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DE6EC0D91F905B68001FFBA3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DE6EC0DE1F905B68001FFBA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE6EC0E11F905B68001FFBA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE6EC0E31F905B68001FFBA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +57,16 @@
 		DED1CC9F1F905E4600AD8BB5 /* ELFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELFileManager.m; sourceTree = "<group>"; };
 		DED1CCA01F905E4600AD8BB5 /* ELFileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELFileModel.h; sourceTree = "<group>"; };
 		DED1CCA11F905E4600AD8BB5 /* ELFileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELFileModel.m; sourceTree = "<group>"; };
+		F334C4F21FC6B45200FFEFD3 /* ELMoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELMoreViewController.h; sourceTree = "<group>"; };
+		F334C4F31FC6B45200FFEFD3 /* ELUploadFileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELUploadFileViewController.h; sourceTree = "<group>"; };
+		F334C4F41FC6B45200FFEFD3 /* ELFileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELFileDetailViewController.h; sourceTree = "<group>"; };
+		F334C4F51FC6B45200FFEFD3 /* ELFileBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELFileBrowseViewController.h; sourceTree = "<group>"; };
+		F334C4F61FC6B45200FFEFD3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F334C4F71FC6B45200FFEFD3 /* ELMoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELMoreViewController.m; sourceTree = "<group>"; };
+		F334C4F81FC6B45200FFEFD3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F334C4F91FC6B45300FFEFD3 /* ELFileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELFileDetailViewController.m; sourceTree = "<group>"; };
+		F334C4FA1FC6B45300FFEFD3 /* ELFileBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELFileBrowseViewController.m; sourceTree = "<group>"; };
+		F334C4FB1FC6B45300FFEFD3 /* ELUploadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELUploadFileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +119,16 @@
 			children = (
 				DE6EC0D51F905B68001FFBA3 /* AppDelegate.h */,
 				DE6EC0D61F905B68001FFBA3 /* AppDelegate.m */,
-				DE6EC0D81F905B68001FFBA3 /* ViewController.h */,
-				DE6EC0D91F905B68001FFBA3 /* ViewController.m */,
+				F334C4F61FC6B45200FFEFD3 /* MainViewController.h */,
+				F334C4F81FC6B45200FFEFD3 /* MainViewController.m */,
+				F334C4F51FC6B45200FFEFD3 /* ELFileBrowseViewController.h */,
+				F334C4FA1FC6B45300FFEFD3 /* ELFileBrowseViewController.m */,
+				F334C4F41FC6B45200FFEFD3 /* ELFileDetailViewController.h */,
+				F334C4F91FC6B45300FFEFD3 /* ELFileDetailViewController.m */,
+				F334C4F31FC6B45200FFEFD3 /* ELUploadFileViewController.h */,
+				F334C4FB1FC6B45300FFEFD3 /* ELUploadFileViewController.m */,
+				F334C4F21FC6B45200FFEFD3 /* ELMoreViewController.h */,
+				F334C4F71FC6B45200FFEFD3 /* ELMoreViewController.m */,
 				DED1CC9D1F905E4600AD8BB5 /* ELFileManager */,
 				DE6EC0DE1F905B68001FFBA3 /* Assets.xcassets */,
 				DE6EC0E01F905B68001FFBA3 /* LaunchScreen.storyboard */,
@@ -280,10 +300,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DED1CCA41F905E5900AD8BB5 /* ELFileModel.m in Sources */,
+				F334C4FF1FC6B45300FFEFD3 /* ELFileBrowseViewController.m in Sources */,
+				F334C4FD1FC6B45300FFEFD3 /* MainViewController.m in Sources */,
 				DED1CCA31F905E5300AD8BB5 /* ELFileManager.m in Sources */,
-				DE6EC0DA1F905B68001FFBA3 /* ViewController.m in Sources */,
 				DE6EC0E51F905B68001FFBA3 /* main.m in Sources */,
 				DE6EC0D71F905B68001FFBA3 /* AppDelegate.m in Sources */,
+				F334C4FE1FC6B45300FFEFD3 /* ELFileDetailViewController.m in Sources */,
+				F334C4FC1FC6B45300FFEFD3 /* ELMoreViewController.m in Sources */,
+				F334C5001FC6B45300FFEFD3 /* ELUploadFileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

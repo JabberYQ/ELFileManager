@@ -6,7 +6,7 @@
 //  Copyright © 2017年 俞琦. All rights reserved.
 //  http://5.fjdx1.crsky.com/software1/VC_CN-v6.0.zip
 
-#import "ViewController.h"
+#import "ELMoreViewController.h"
 #import "ELFileModel.h"
 #import "ELFileManager.h"
 
@@ -44,7 +44,7 @@
 }
 @end
 
-@interface ViewController () <UITableViewDelegate, UITableViewDataSource, NSURLSessionDelegate>
+@interface ELMoreViewController () <UITableViewDelegate, UITableViewDataSource, NSURLSessionDelegate>
 @property (nonatomic, strong) NSMutableArray *files;
 @property (nonatomic, strong) ELFileManager *fileManager;
 @property (nonatomic, weak) UITableView *tv;
@@ -54,7 +54,7 @@
 @property (nonatomic, weak) YQProgress *progress;
 @end
 
-@implementation ViewController
+@implementation ELMoreViewController
 {
     ELFileModel *_longPressFile; // 记录长按的文件
     NSIndexPath *_longPressIndexPath; // 记录长按的indexpath
@@ -189,7 +189,7 @@
 {
     ELFileModel *file = self.files[indexPath.row];
     if (file.fileType == ELFileTypeDirectory) {
-        ViewController *vc = [[ViewController alloc] init];
+        ELMoreViewController *vc = [[ELMoreViewController alloc] init];
         vc.fileModel = file;
         vc.homePath = file.filePath;
         [self.navigationController pushViewController:vc animated:YES];

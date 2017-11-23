@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class ELFileModel;
 
-@interface ViewController : UIViewController
+@interface ELMoreViewController : UIViewController
 @property (nonatomic, strong) ELFileModel *fileModel;
 
 @end
