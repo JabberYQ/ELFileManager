@@ -11,6 +11,7 @@
 #import "ELUploadFileViewController.h"
 #import "ELFileModel.h"
 #import "ELFileBrowseViewController.h"
+#import "ELGetAlllFileInDeepSearchViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) NSArray * lists;
@@ -22,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"Mian";
-    self.lists = @[@"上传控制器 路径：document/2333", @"文件浏览器 路径：document/2333", @"更多操作 路径：cache/ELFileCache"];
+    self.lists = @[@"上传控制器 路径：document/2333", @"文件浏览器 路径：document/2333", @"获取所有文件（没有文件夹）路径：document/2333", @"更多操作 路径：cache/ELFileCache"];
     
     UITableView *tv = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tv.delegate = self;
@@ -62,6 +63,9 @@
         ELFileBrowseViewController *fileBrowse = [[ELFileBrowseViewController alloc] initWithPath:path];
         [self.navigationController pushViewController:fileBrowse animated:YES];
     } else if (indexPath.row == 2) {
+        ELGetAlllFileInDeepSearchViewController *allfile = [[ELGetAlllFileInDeepSearchViewController alloc] initWithPath:path];
+        [self.navigationController pushViewController:allfile animated:YES];
+    } else if (indexPath.row == 3) {
         ELMoreViewController *vc = [[ELMoreViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }

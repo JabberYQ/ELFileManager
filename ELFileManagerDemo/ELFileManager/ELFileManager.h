@@ -19,6 +19,7 @@
  */
 + (instancetype)shareManager;
 
+
 /**
  获得一个文件
  
@@ -29,12 +30,32 @@
 
 
 /**
- 获取到当前路径下的所有文件（包括文件夹）
+ 获取到当前路径下的所有文件（返回包括文件夹）(表面！！！)
  
  @param path 文件夹路径
  @return 返回 ELFileModel 对象数组
  */
 - (NSArray *)getAllFileWithPath:(NSString *)path;
+
+
+
+/**
+ 表面获取当前文件夹下的所有文件（返回不包括文件夹，全是文件）（表面！！！）
+ 
+ @param path 文件夹路径
+ @return 返回 ELFileModel 对象数组
+ */
+- (NSArray *)getAllFileInPathWithSurfaceSearch:(NSString *)path;
+
+
+/**
+ 深度获取当前文件夹下的所有文件（返回不包括文件夹，全是文件）（深度！！！）
+ 
+ @param path 文件夹路径
+ @return 返回 ELFileModel 对象数组
+ */
+- (NSArray *)getAllFileInPathWithDeepSearch:(NSString *)path;
+
 
 
 /**

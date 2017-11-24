@@ -20,6 +20,7 @@
 		F334C4FE1FC6B45300FFEFD3 /* ELFileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F334C4F91FC6B45300FFEFD3 /* ELFileDetailViewController.m */; };
 		F334C4FF1FC6B45300FFEFD3 /* ELFileBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F334C4FA1FC6B45300FFEFD3 /* ELFileBrowseViewController.m */; };
 		F334C5001FC6B45300FFEFD3 /* ELUploadFileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F334C4FB1FC6B45300FFEFD3 /* ELUploadFileViewController.m */; };
+		F334C50A1FC8117C00FFEFD3 /* ELGetAlllFileInDeepSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F334C5091FC8117C00FFEFD3 /* ELGetAlllFileInDeepSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		F334C4F91FC6B45300FFEFD3 /* ELFileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELFileDetailViewController.m; sourceTree = "<group>"; };
 		F334C4FA1FC6B45300FFEFD3 /* ELFileBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELFileBrowseViewController.m; sourceTree = "<group>"; };
 		F334C4FB1FC6B45300FFEFD3 /* ELUploadFileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELUploadFileViewController.m; sourceTree = "<group>"; };
+		F334C5081FC8117C00FFEFD3 /* ELGetAlllFileInDeepSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELGetAlllFileInDeepSearchViewController.h; sourceTree = "<group>"; };
+		F334C5091FC8117C00FFEFD3 /* ELGetAlllFileInDeepSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELGetAlllFileInDeepSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				F334C4F91FC6B45300FFEFD3 /* ELFileDetailViewController.m */,
 				F334C4F31FC6B45200FFEFD3 /* ELUploadFileViewController.h */,
 				F334C4FB1FC6B45300FFEFD3 /* ELUploadFileViewController.m */,
+				F334C5081FC8117C00FFEFD3 /* ELGetAlllFileInDeepSearchViewController.h */,
+				F334C5091FC8117C00FFEFD3 /* ELGetAlllFileInDeepSearchViewController.m */,
 				F334C4F21FC6B45200FFEFD3 /* ELMoreViewController.h */,
 				F334C4F71FC6B45200FFEFD3 /* ELMoreViewController.m */,
 				DED1CC9D1F905E4600AD8BB5 /* ELFileManager */,
@@ -305,6 +310,7 @@
 				DED1CCA31F905E5300AD8BB5 /* ELFileManager.m in Sources */,
 				DE6EC0E51F905B68001FFBA3 /* main.m in Sources */,
 				DE6EC0D71F905B68001FFBA3 /* AppDelegate.m in Sources */,
+				F334C50A1FC8117C00FFEFD3 /* ELGetAlllFileInDeepSearchViewController.m in Sources */,
 				F334C4FE1FC6B45300FFEFD3 /* ELFileDetailViewController.m in Sources */,
 				F334C4FC1FC6B45300FFEFD3 /* ELMoreViewController.m in Sources */,
 				F334C5001FC6B45300FFEFD3 /* ELUploadFileViewController.m in Sources */,

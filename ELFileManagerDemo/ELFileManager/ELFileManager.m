@@ -57,6 +57,33 @@ static id instance = nil;
     return files;
 }
 
+- (NSArray *)getAllFileInPathWithSurfaceSearch:(NSString *)path
+{
+    NSMutableArray *files = [NSMutableArray array];
+    NSArray<NSString *> *subPathsArray = [self.fileManager contentsOfDirectoryAtPath:path error: NULL];
+    for(NSString *str in subPathsArray){
+        ELFileModel *file = [[ELFileModel alloc] initWithFilePath: [NSString stringWithFormat:@"%@/%@",path, str]];
+        if (file.fileType != ELFileTypeDirectory)
+            [files addObject:file];
+    }
+    return files;
+}
+
+- (NSArray *)getAllFileInPathWithDeepSearch:(NSString *)path
+{
+    NSMutableArray *files = [NSMutableArray array];
+    NSArray<NSString *> *subPathsArray = [self.fileManager contentsOfDirectoryAtPath:path error: NULL];
+    for(NSString *str in subPathsArray){
+        ELFileModel *file = [[ELFileModel alloc] initWithFilePath: [NSString stringWithFormat:@"%@/%@",path, str]];
+        if (file.fileType == ELFileTypeDirectory) {
+            [files addObjectsFromArray: [self getAllFileInPathWithDeepSearch:file.filePath]];
+        } else {
+            [files addObject:file];
+        }
+    }
+    return files;
+}
+
 - (BOOL)fileExistsAtPath:(NSString *)path
 {
     return [[NSFileManager defaultManager] fileExistsAtPath:path];
